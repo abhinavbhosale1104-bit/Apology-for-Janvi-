@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry Janvi ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+overflow-x:hidden;
+color:#444;
+}
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+pointer-events:none;
+z-index:-1;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:3rem;
+color:#ff4f8b;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:700px;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 35px;
+border:none;
+border-radius:50px;
+background:#ff4f8b;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+color:#ff4f8b;
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+line-height:1.8;
+}
+
+.reasons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.reason{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.reason span{
+font-size:2rem;
+}
+
+.special{
+text-align:center;
+}
+
+.special p{
+max-width:800px;
+margin:auto;
+line-height:2;
+font-size:1.1rem;
+}
+
+.forgive{
+text-align:center;
+padding-bottom:100px;
+}
+
+.yesBtn,.noBtn{
+padding:14px 30px;
+margin:10px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+cursor:pointer;
+}
+
+.yesBtn{
+background:#ff4f8b;
+color:white;
+}
+
+.noBtn{
+background:#f2f2f2;
+}
+
+.popup{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.15);
+text-align:center;
+z-index:1000;
+}
+
+.popup h2{
+color:#ff4f8b;
+margin-bottom:10px;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+<h1>I'm Sorry Janvi ❤️🥺</h1>
+
+<p>
+From Abhinav 💗<br><br>
+I know my words hurt you, and I truly regret them.
+My intention was never to question you or make you feel bad.
+Sometimes I don't express myself as clearly as I should, and instead of communicating properly,
+I ended up saying something that hurt you.
+You didn't deserve that. 🌸
+</p>
+
+<button class="btn" onclick="scrollToLetter()">Read My Heart 💌</button>
+</section>
+
+<section id="letter">
+<h2 class="section-title">A Sincere Apology 💌</h2>
+
+<div class="card">
+<p>
+I respect you, I care about you, and I value our bond more than any misunderstanding. ❤️
+What I said doesn't reflect how I truly see you.
+If my words made you feel hurt, disappointed, or misunderstood,
+I am genuinely sorry. 🥺
+<br><br>
+If I could take those words back, I would.
+All I can do now is sincerely apologize and learn from this mistake.
+You're someone who means a lot to me, and the last thing I ever want is to be the reason for your sadness. 🌷
+<br><br>
+I hope, in time, you can understand my mistake and forgive me. 💗
+</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Why I Love You ❤️</h2>
+
+<div class="reasons">
+
+<div class="reason">
+<span>🌸</span>
+<h3>Your Presence</h3>
+<p>
+You make even ordinary conversations feel special.
+</p>
+</div>
+
+<div class="reason">
+<span>☀️</span>
+<h3>My Happy Place</h3>
+<p>
+Your presence can make my day better without you even realizing it.
+</p>
+</div>
+
+<div class="reason">
+<span>✨</span>
+<h3>Your Kindness</h3>
+<p>
+I admire your kindness and the way you see things differently.
+</p>
+</div>
+
+<div class="reason">
+<span>💗</span>
+<h3>The Real You</h3>
+<p>
+I love the person you are because you're genuine, real and special in your own way.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="special">
+<h2 class="section-title">Special Message For You 🎀</h2>
+
+<div class="card">
+<p>
+No matter what happens, I want you to know that you mean a lot to me. ❤️
+<br><br>
+You are one of the most genuine and special people I've met, and the last thing I would ever want is to be the reason behind your sadness. 🥺💗
+<br><br>
+Thank you for being part of my life. 🌷
+No matter how upset you are with me right now, I will always respect you, care about you, and wish the best for you.
+<br><br>
+You are special to me, and I never want you to forget that. ❤️✨
+</p>
+</div>
+</section>
+
+<section class="forgive">
+<h2 class="section-title">Will You Forgive Me? 🥺❤️</h2>
+
+<button class="yesBtn" onclick="showPopup()">
+Yes 💗
+</button>
+
+<button class="noBtn" id="noBtn">
+No 😶
+</button>
+</section>
+
+<div class="popup" id="popup">
+<h2>YAYYY! ❤️🥺</h2>
+<p>
+Thank you Janvi 💗<br>
+You just made Abhinav the happiest person. 🌸✨
+</p>
+</div>
+
+<div class="footer">
+Made with ❤️ by Abhinav for Janvi
+</div>
+
+<script>
+
+function scrollToLetter(){
+document.getElementById("letter").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+function showPopup(){
+document.getElementById("popup").style.display="block";
+}
+
+const noBtn=document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover",()=>{
+const x=Math.random()*window.innerWidth-100;
+const y=Math.random()*window.innerHeight-100;
+
+noBtn.style.position="absolute";
+noBtn.style.left=x+"px";
+noBtn.style.top=y+"px";
+});
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="💗";
+
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+heart.style.animationDuration=
+(Math.random()*5+5)+"s";
+
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+}
+
+setInterval(createHeart,300);
+
+</script>
+
+</body>
+</html>
